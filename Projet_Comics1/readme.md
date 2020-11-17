@@ -2,4 +2,4 @@ Projet_Comics
 
 BERIBECHE Adam - 17/11/2020
 
-beribeche.github.io
+https://beribeche.github.io/index.html
