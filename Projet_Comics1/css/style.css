@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+/* reset css */
+html{
+    font-size: 62.5%;
+    background: #222 url(https://i.imgur.com/HWu44Bv.png)no-repeat fixed center center / cover; /* vertical / horizontal */
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+/* contexte */
+h1{
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 0;
+}
+h1,h2,ol,p{
+    margin: 50;
+    padding: 0;
+    font-weight: 100;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* theme css */
+:root{
+    --color-bg-default: #c0392b;
+    --color-link: #fff;
+    --color-body: #3498db;
+    --header-color: #3498db;
+}
+header, main{
+    max-width: 90rem;
+    border: 0.1rem solid transparent;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+header{
+    margin: 0 auto 0; /* top droite gauche bas */
+    padding: .2rem;
+}
+header h1::before{
+    content: '\2605'; /* icone unicode */
+    color: var(--color-bg-default);
+    vertical-align: .3rem;
+    margin-right: .1rem;
+}
+main{
+    padding: .5rem;
+}
+nav ol{
+    padding-left: 3.0rem;
+}
+nav ol li{
+    text-transform: capitalize;
+    line-height: 2.5rem;
+}
+section h2, nav h2{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--header-color);
+    line-height: 4.5rem;
+    text-transform: capitalize;
+    box-shadow: 0 .3rem 0 #3498db;
+    text-shadow: .1rem .1rem #fff;
+    color: #ffffff;
+    padding: .5rem;
+}
+/* pour les liens */
+section .history, section .history-géo{
+    transition-duration: 0.9s;
+}
+section .history:target{
+    background-color: var(--color-bg-default);
+    box-shadow: var(--color-bg-default);
+}
+section .history-géo:target{
+    background-color: var(--color-bg-default);
+    box-shadow: var(--color-bg-default);
+}
+section img{
+    display: block;
+    width: 100%;
+}
+section p{
+    padding: .5rem;
+    line-height: 2.6rem;
+    text-align: justify;
+}
+section .picture{
+    margin-bottom: 1rem;
+}
+section{
+    padding-bottom: .5rem;
+}
+main footer{
+    text-align: center;
+    text-transform: capitalize;
+    padding: .5rem;
+}
+h1, h2{
+    font-family: 'Zhi Mang Xing', cursive;
+}
+p{
+    font-family: "Open Sans";
+}
